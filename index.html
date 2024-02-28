@@ -1,0 +1,32 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="home">
+                <h3 id="teamName" onclick="changeTeamName()">A TAKIMI</h3>
+                <p class="homeScore">0</p>
+                <div class="btnwrap">
+                    <button class="one">+1</button>
+                    <button class="reduce">-1</button>
+                    <button class="setScore">Skor Ayarlama</button>
+                </div>
+            </div>
+            <div class="newgame">
+                <button class="game">YENİDEN OYNA</button>
+                <p class="diff"></p>
+            </div>
+            <div class="other">
+                <h3 id="teamName1" onclick="changeTeamName1()">A TAKIMI</h3> 
+                <p class="guestScore">0</p>
+                <div class="btnwrap">
+                    <button class="one">+1</button>
+                    <button class="reduce">-1</button>
+                    <button class="setScore">Skor Ayarlama</button>
+                </div>
+            </div>
+        </div>
+       <script src="app.js"></script>
+    </body>
+</html>
