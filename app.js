@@ -3,10 +3,8 @@ const guestScore = document.querySelector(".guestScore")
 const btnn = document.querySelectorAll(".btnwrap");
 const game = document.querySelector(".newgame")
 const diff = document.querySelector(".diff");
-
 function changeTeamName() {
   var newName = prompt("Yeni takım adını giriniz:");
-
   if (newName !== null && newName.trim() !== "") {
       document.getElementById("teamName").textContent = newName;
   } else {
@@ -15,14 +13,12 @@ function changeTeamName() {
 }
 function changeTeamName1() {
   var newName1 = prompt("Yeni takım adını giriniz:");
-
   if (newName1 !== null && newName1.trim() !== "") {
       document.getElementById("teamName1").textContent = newName1;
   } else {
       alert("Lütfen geçerli bir takım adı giriniz!");
   }
 }
-
 btnn.forEach(element => {
     element.addEventListener("click",e=>{
         e.preventDefault()
@@ -50,12 +46,8 @@ else if (btn.className === "setScore") {
   }
     changeColor();
 }
-
-
-
     })
 });
-
 const changeColor = ()=>{
 if (homeScore.textContent === guestScore.textContent) {
   homeScore.style.color = "yellow";
@@ -86,10 +78,7 @@ diff.textContent = `A TAKIMI ${
        Number(guestScore.textContent) - Number(homeScore.textContent)
      } PUANLA ÖNDE`;
    }
-  
 }
-
-
 }
 const newGame = ()=>{
     homeScore.textContent = 0
@@ -98,5 +87,4 @@ const newGame = ()=>{
     homeScore.style.color = "white";
     guestScore.style.color = "white";
 }
-
 game.addEventListener("click",newGame)
